@@ -4,11 +4,15 @@ import React from 'react'
 const HomeScreen = () => {
   return (
     <safeAreaView>
-      <Text>I am the homescreen</Text>
+      <Text style={styles.text}>I am the homescreen</Text>
     </safeAreaView>
   )
 }
 
 export default HomeScreen
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    text: {
+        color: "blue",
+    },
+})
