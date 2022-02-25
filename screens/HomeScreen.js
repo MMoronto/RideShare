@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, safeAreaView } from 'react-native'
 import React from 'react'
 
 const HomeScreen = () => {
   return (
-    <View>
+    <safeAreaView>
       <Text>I am the homescreen</Text>
-    </View>
+    </safeAreaView>
   )
 }
 
