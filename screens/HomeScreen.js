@@ -4,8 +4,19 @@ import tw from 'tailwind-react-native-classnames';
 
 const HomeScreen = () => {
   return (
-    <safeAreaView>
-      <Text style={styles.text}>I am the homescreen</Text>
+    <safeAreaView style={tw`bg-white-100 h-full`}>
+      <View>
+          <image
+            style={{
+                width: 100, 
+                height: 100, 
+                resizeMode: 'contain',
+            }}
+            source={{
+                uri: "https://www.istockphoto.com/vector/truck-gm1213948971-353010272",
+            }}
+          />
+      </View>
     </safeAreaView>
   )
 }
