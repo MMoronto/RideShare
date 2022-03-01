@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native';
+import { FlatList, Text, View } from 'react-native';
 import React from 'react';
 
 const data = [
@@ -18,9 +18,15 @@ const data = [
 
 const NavOptions = () => {
   return (
-    <View>
-      <Text>Hello World</Text>
-    </View>
+    <FlatList 
+        data={data}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+            <TouchableOpacity>
+                <Text>{item.title}</Text>
+            </TouchableOpacity>
+        )}
+    />
   );
 };
 
