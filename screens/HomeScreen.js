@@ -9,18 +9,19 @@ const HomeScreen = () => {
       <View style={tw`p-5`}>
           <Image
             style={{
-                width: 100, 
-                height: 100, 
+                width: 250, 
+                height: 250, 
                 resizeMode: 'contain',
             }}
-            source={require{'.assets/logo-1.png'}}
+            // source={{ uri: '.assets/logo-1.png'}}
+            source={{ uri: 'https://images.unsplash.com/photos/ki19VJAGh6w' }}
           />
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;
 
 const styles = StyleSheet.create({
     text: {
