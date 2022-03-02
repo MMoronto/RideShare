@@ -5,16 +5,16 @@ import NavOptions from "../components/NavOptions";
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={tw`bg-white-100 h-full`}>
+    <SafeAreaView style={tw`bg-white h-full`}>
       <View style={tw`p-5`}>
           <Image
             style={{
-                width: 250, 
-                height: 250, 
+                width: 100, 
+                height: 100, 
                 resizeMode: 'contain',
             }}
             // source={{ uri: '.assets/logo-1.png'}}
-            source={{ uri: 'https://images.unsplash.com/photos/ki19VJAGh6w' }}
+            source={{ uri: 'https://images.unsplash.com/photos/ki19VJAGh6w', }}
           />
 
           <NavOptions />
@@ -29,4 +29,4 @@ const styles = StyleSheet.create({
     text: {
         color: "blue",
     },
-})
+});
