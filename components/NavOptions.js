@@ -1,17 +1,17 @@
 import React from 'react';
-import { FlatList, Text, View } from 'react-native';
+import { FlatList, Text, TouchableOpacity, View } from 'react-native';
 
 const data = [
         {
             id: "123",
             title: "Hire a hauler",
-            image: 'https://images.unsplash.com/photos/ki19VJAGh6w',
+            image: 'http://www.supercoloring.com/coloring-pages/dump-truck-1',
             screen: "MapScreen",
         },
         {
             id: "456",
             title: "order items",
-            image: 'https://images.unsplash.com/photos/ki19VJAGh6w',
+            image: 'http://www.supercoloring.com/coloring-pages/dump-truck-1',
             screen: "ItemsScreen",
         }
     ];
