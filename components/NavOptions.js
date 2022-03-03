@@ -13,7 +13,7 @@ const data = [
             title: "order items",
             image: 'https://images.unsplash.com/photos/ki19VJAGh6w',
             screen: "ItemsScreen",
-        },
+        }
     ];
 
 const NavOptions = () => {
