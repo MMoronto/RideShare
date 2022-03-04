@@ -14,7 +14,7 @@ const HomeScreen = () => {
                 resizeMode: 'contain',
             }}
             // source={{ uri: '.assets/logo-1.png'}}
-            source={{ uri: 'http://www.supercoloring.com/coloring-pages/dump-truck-1', }}
+            source={{ uri: 'https://unsplash.com/photos/b6Pw3Q3FYR8', }}
           />
 
           <NavOptions />
