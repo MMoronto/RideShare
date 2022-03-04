@@ -5,13 +5,13 @@ const data = [
         {
             id: "123",
             title: "Hire a hauler",
-            image: 'http://www.supercoloring.com/coloring-pages/dump-truck-1',
+            image: 'https://unsplash.com/photos/wWlHbRE6FD0',
             screen: "MapScreen",
         },
         {
             id: "456",
             title: "order items",
-            image: 'http://www.supercoloring.com/coloring-pages/dump-truck-1',
+            image: 'https://unsplash.com/photos/8PKEeac1hzw',
             screen: "ItemsScreen",
         }
     ];
