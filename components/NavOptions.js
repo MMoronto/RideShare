@@ -30,7 +30,7 @@ const NavOptions = () => {
                         source={{ uri: item.image }}
                     />
                 </View>
-                <Text>{item.title}</Text>
+                <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
             </TouchableOpacity>
         )}
     />
