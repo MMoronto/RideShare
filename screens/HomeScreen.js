@@ -8,13 +8,14 @@ const HomeScreen = () => {
     <SafeAreaView style={tw`bg-white h-full`}>
       <View style={tw`p-5`}>
           <Image
-            style={{
-                width: 100, 
-                height: 100, 
-                resizeMode: 'contain',
-            }}
-            // source={{ uri: '.assets/logo-1.png'}}
-            source={{ uri: 'https://unsplash.com/photos/b6Pw3Q3FYR8', }}
+                style={{
+                    width: 100, 
+                    height: 100, 
+                    resizeMode: 'contain',
+                }}
+                // source={{ uri: '.assets/logo-1.png'}}
+                // source={{ uri: 'https://unsplash.com/photos/b6Pw3Q3FYR8', }}
+                source={{ uri: 'https://links.papareact.com/gas', }}
           />
 
           <NavOptions />

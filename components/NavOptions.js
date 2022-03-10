@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
+import { FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
 import tw from 'tailwind-react-native-classnames';
 
 const data = [
