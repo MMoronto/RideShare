@@ -6,13 +6,15 @@ const data = [
         {
             id: "123",
             title: "Hire a hauler",
-            image: 'https://unsplash.com/photos/wWlHbRE6FD0',
+            // image: 'https://unsplash.com/photos/wWlHbRE6FD0',
+            image: 'https://links.papareact.com/3pn',
             screen: "MapScreen",
         },
         {
             id: "456",
             title: "order items",
-            image: 'https://unsplash.com/photos/8PKEeac1hzw',
+            // image: 'https://unsplash.com/photos/8PKEeac1hzw',
+            image: 'https://links.papareact.com/28w',
             screen: "ItemsScreen",
         }
     ];
