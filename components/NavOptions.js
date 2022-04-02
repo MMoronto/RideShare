@@ -35,7 +35,7 @@ const NavOptions = () => {
                 </View>
                 <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
             </TouchableOpacity>
-        )}
+        }
     />
   );
 };
