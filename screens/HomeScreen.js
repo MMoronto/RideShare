@@ -5,8 +5,8 @@ import NavOptions from "../components/NavOptions";
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView >
-      <Text style={tw`text-red-600`}>I am the homescreen</Text>
+    <SafeAreaView style={tw`bg-gray-100 h-full`}>
+      <Text style={[tw`text-red-600 p-10`]}>I am the homescreen</Text>
     </SafeAreaView>
   );
 };
