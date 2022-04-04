@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, FlatList, Text, View } from 'react-native';
+import { Image, TouchableOpacity, FlatList, Text, View } from 'react-native';
 
 const data = [
     {
@@ -11,7 +11,7 @@ const data = [
     {
         id: "456",
         title: "Order item",
-        image: "https://links.papareact.com/2Bw",
+        image: "https://links.papareact.com/28w",
         screen: "ShopsScreen", // Revise later       
     },
 ];
@@ -20,13 +20,16 @@ const NavOptions = () => {
   return (
     <FlatList 
         data={data}
+        horizontal
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
             <TouchableOpacity>
                 <View>
-                    <image 
+                    <Image 
+                    style={{ width: 120, height: 120, resizeMode: "contain" }}
                         source={{ uri: item.image}}
                     />
+                    <Text>{item.title}</Text>
                 </View>
             </TouchableOpacity>
         )}
