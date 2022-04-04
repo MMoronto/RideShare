@@ -6,7 +6,16 @@ import NavOptions from "../components/NavOptions";
 const HomeScreen = () => {
   return (
     <SafeAreaView style={tw`bg-gray-100 h-full`}>
-      <Text style={[tw`text-red-600 p-10`]}>I am the homescreen</Text>
+      <View>
+        <Image 
+          style={{
+            width: 100, height: 100, resizeMode: 'contain'
+          }}
+          source={{
+            uri: "https://links.papareact.com/gzs"
+          }}
+        />
+      </View>
     </SafeAreaView>
   );
 };
