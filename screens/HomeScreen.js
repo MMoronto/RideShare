@@ -6,7 +6,7 @@ import NavOptions from "../components/NavOptions";
 const HomeScreen = () => {
   return (
     <SafeAreaView >
-      <Text>I am the homescreen</Text>
+      <Text style={styles.text}>I am the homescreen</Text>
     </SafeAreaView>
   );
 };
