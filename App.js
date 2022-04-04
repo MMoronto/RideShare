@@ -11,12 +11,10 @@ import { store } from "./store";
 export default function App() {
   return (
     <Provider store={store}>
-      <View style={styles.container}>
-        <Text>Lets build an App!</Text>
-      </View>
+      <HomeScreen />
     </Provider>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
