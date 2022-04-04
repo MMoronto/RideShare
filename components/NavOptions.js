@@ -12,7 +12,8 @@ const data = [
     {
         id: "456",
         title: "Order item",
-        image: "https://links.papareact.com/28w",
+        // image: "https://links.papareact.com/28w",
+        image: "/Users/t2wycemo/Dev/RideShare/assets/splash.png",
         screen: "ShopsScreen", // Revise later       
     },
 ];
