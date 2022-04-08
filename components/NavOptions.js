@@ -8,14 +8,13 @@ const data = [
     {
         id: "123",
         title: "Hire a hauler",
-        image: "https://links.papareact.com/3pn",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHWG75ix1Qprkgt0b7LC0Wbrmf32hbRPI7Nw&usqp=CAU",
         screen: "MapScreen",
     },
     {
         id: "456",
         title: "Order item",
-        image: "https://links.papareact.com/28w",
-        // image: "/Users/t2wycemo/Dev/RideShare/assets/splash.png",
+        image: "https://structville.com/wp-content/uploads/2020/03/Cement-brands-in-Nigeria.jpg",
         screen: "ShopsScreen", // Revise later       
     },
 ];
