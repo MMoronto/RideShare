@@ -34,7 +34,7 @@ const NavOptions = () => {
             >
                 <View>
                     <Image 
-                    style={{ width: 120, height: 120, resizeMode: "contain" }}
+                    style={{ width: 100, height: 100, resizeMode: "contain" }}
                         source={{ uri: item.image}}
                     />
                     <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>

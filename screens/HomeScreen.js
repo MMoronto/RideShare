@@ -11,7 +11,7 @@ const HomeScreen = () => {
       <View style={tw`p-5`}>
         <Image 
           style={{
-            width: 100, height: 100, resizeMode: 'contain'
+            width: 80, height: 80, resizeMode: 'contain'
           }}
           source={{
             uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBzj_U2xUXkBirJ8Q9TCWWmJA_oBWn7wbuQ&usqp=CAU"
@@ -22,7 +22,7 @@ const HomeScreen = () => {
           placeholder='Where From?'
           styles={{
             container: {
-              flex: 0,
+              flex: 15,
             },
             textInput: {
               fontSize: 18,
