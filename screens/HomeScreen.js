@@ -22,13 +22,13 @@ const HomeScreen = () => {
           placeholder='Where From?'
           styles={{
             container: {
-              flex: 15,
+              flex: 5,
             },
             textInput: {
               fontSize: 18,
             }
           }}
-
+          minLength={2}
           query={{
             key: GOOGLE_MAPS_APIKEY,
             language: 'en'
