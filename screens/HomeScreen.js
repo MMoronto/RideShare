@@ -22,12 +22,11 @@ const HomeScreen = () => {
           placeholder='Where From?'
           styles={{
             container: {
-              flex: 5
-              ,
+              flex: 5,
             },
             textInput: {
               fontSize: 18,
-            }
+            },
           }}
           // minLength={2}
           query={{
