@@ -49,8 +49,8 @@ const HomeScreen = () => {
   );
 };
 
-// export default HomeScreen;
-export default GooglePlacesInput;
+export default HomeScreen;
+// export default GooglePlacesInput;
 
 const styles = StyleSheet.create({
     text: {
