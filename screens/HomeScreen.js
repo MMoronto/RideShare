@@ -20,6 +20,10 @@ const HomeScreen = () => {
 
         <GooglePlacesAutocomplete
           placeholder='Where From?'
+          onPress={(data, details = null) =-> {
+            // 'dertails' is provided when fetchDetails = true
+            console.log(data, details);
+          }}
           styles={{
             container: {
               flex: 5,
@@ -33,11 +37,11 @@ const HomeScreen = () => {
             key: GOOGLE_MAPS_APIKEY,
             language: 'en',
           }}
-          requestUrl={{
-            useOnPlatform: 'web', // or "all"
-            url:
-              'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api', // or any proxy server that hits https://maps.googleapis.com/maps/api
-          }}
+          // requestUrl={{
+          //   useOnPlatform: 'web', // or "all"
+          //   url:
+          //     'https://maps.googleapis.com/maps/api', // or any proxy server that hits https://maps.googleapis.com/maps/api
+          // }}
           nearbyPlacesAPI='GooglePlacesSearch'
           debounce={400}
         />
