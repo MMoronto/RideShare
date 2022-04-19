@@ -32,7 +32,10 @@ const HomeScreen = () => {
               fontSize: 18,
             },
           }}
-          // minLength={2}
+          minLength={2}
+          getDefaultValue={() => {
+            return ''; // text input default value
+          }}
           query={{
             key: GOOGLE_MAPS_APIKEY,
             language: 'en',
