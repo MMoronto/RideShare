@@ -32,6 +32,16 @@ const HomeScreen = () => {
               fontSize: 18,
             },
           }}
+          onPress={(data, details = null) => {
+            dispatch(
+              setOrigin({
+                location: details.geometry.location,
+                descriptiojn: data.description,
+              })
+            );
+
+            dispatch(setDestination(null));
+          }}
           fetchDetails={true}
           enablePowerByContainer={false}
           minLength={2}
