@@ -6,6 +6,8 @@ import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplet
 import { GOOGLE_MAPS_APIKEY } from "@env";
 
 const HomeScreen = () => {
+  const dispatch = useDispatch();
+  
   return (
     <SafeAreaView style={tw`bg-gray-100 h-full`}>
       <View style={tw`p-5`}>
