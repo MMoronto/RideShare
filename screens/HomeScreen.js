@@ -7,7 +7,7 @@ import { GOOGLE_MAPS_APIKEY } from "@env";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
-  
+
   return (
     <SafeAreaView style={tw`bg-gray-100 h-full`}>
       <View style={tw`p-5`}>
@@ -35,21 +35,13 @@ const HomeScreen = () => {
             },
           }}
           onPress={(data, details = null) => {
-            dispatch(
-              setOrigin({
-                location: details.geometry.location,
-                descriptiojn: data.description,
-              })
-            );
-
-            dispatch(setDestination(null));
+            console.log(data);
+            console.log(details);
           }}
           fetchDetails={true}
+          returnKeyType={"search"}
           enablePowerByContainer={false}
           minLength={2}
-          // getDefaultValue={() => {
-          //   return ''; // text input default value
-          // }}
           query={{
             key: GOOGLE_MAPS_APIKEY,
             language: 'en',
