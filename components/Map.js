@@ -18,7 +18,7 @@ const Map = () => {
             longitudeDelta: 0.005,
         }}
     >
-        {origin?.location}
+        {origin?.location && (
             <Marker 
                 coordinate={{
                     latitude: origin.location.lat,
@@ -28,9 +28,10 @@ const Map = () => {
                 description={origin.description}
                 identifier="origin"
             />
+        )}    
     </MapView>
   );
-}
+};
 
 export default Map;
 
