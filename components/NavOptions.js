@@ -1,8 +1,10 @@
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { Image, TouchableOpacity, FlatList, Text, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { useSelector } from 'react-redux';
+import { Image, TouchableOpacity, FlatList, Text, View,  } from 'react-native';
 import { Icon } from 'react-native-elements';
 import tw from "tailwind-react-native-classnames";
+import { selectOrigin } from '../slices/navSlice';
 
 const data = [
     {
