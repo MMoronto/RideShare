@@ -3,15 +3,21 @@ import { StyleSheet, Text, View } from 'react-native'
 import tw from "tailwind-react-native-classnames";
 import Map from '../components/Map';
 import MapView from 'react-native-maps';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const MapScreen = () => {
+  const NativeStack = createNativeStackNavigator();
   return (
     <View>
       <View style={tw`h-1/2`}>
         < Map/>
       </View>
 
-      <View style={tw`h-1/2`}></View>
+      <View style={tw`h-1/2`}>
+        <NativeStack.Navigator>
+          
+        </NativeStack.Navigator>
+      </View>
     </View>
   );
 };
