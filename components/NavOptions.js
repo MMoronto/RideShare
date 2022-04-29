@@ -21,6 +21,7 @@ const data = [
 
 const NavOptions = () => {
     const navigation = useNavigation();
+    const origin = useSelector(selectOrigin);
 
   return (
     <FlatList 
@@ -31,6 +32,7 @@ const NavOptions = () => {
             <TouchableOpacity
                 onPress={() => navigation.navigate(item.screen)}
                 style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40`}
+                disabled={!origin}
             >
                 <View>
                     <Image 
