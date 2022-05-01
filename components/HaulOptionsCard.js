@@ -1,10 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 const HaulOptionsCard = () => {
   return (
     <View>
-      <Text>HaulOptionsCard</Text>
+      <Text>Hire a hauler</Text>
     </View>
   )
 }

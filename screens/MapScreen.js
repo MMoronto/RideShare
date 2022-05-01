@@ -5,6 +5,7 @@ import Map from '../components/Map';
 import NavigateCard from '../components/NavigateCard';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StackActions } from '@react-navigation/native';
+import HaulOptionsCard from '../components/HaulOptionsCard';
 
 const MapScreen = () => {
   const NativeStack = createNativeStackNavigator();
