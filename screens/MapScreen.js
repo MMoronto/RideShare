@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import tw from "tailwind-react-native-classnames";
 import Map from '../components/Map';
-import MapView from 'react-native-maps';
+import NavigateCard from '../components/NavigateCard';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StackActions } from '@react-navigation/native';
 
