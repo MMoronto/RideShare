@@ -3,12 +3,12 @@ import React from 'react'
 
 const NavigateCard = () => {
   return (
-    <View>
+    <SafeAreaView style={tw`bg-white flex-1`}>
       <Text>NavigateCard</Text>
-    </View>
+    </SafeAreaView>
   )
 }
 
-export default NavigateCard
+export default NavigateCard;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
