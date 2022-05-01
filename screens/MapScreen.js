@@ -23,6 +23,13 @@ const MapScreen = () => {
               headerShown: false,
             }}
           />
+          <Stack.Screen 
+            name="HaulOptionsCard"
+            component={HaulOptionsCard}
+            options={{
+              headerShown: false,
+            }}
+          />
         </NativeStack.Navigator>
       </View>
     </View>
