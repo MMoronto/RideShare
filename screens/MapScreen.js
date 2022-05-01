@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native'
 import tw from "tailwind-react-native-classnames";
 import Map from '../components/Map';
 import NavigateCard from '../components/NavigateCard';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StackActions } from '@react-navigation/native';
+import { StackActions } from '@react-navigation/native-stack';
 import HaulOptionsCard from '../components/HaulOptionsCard';
 
 const MapScreen = () => {
@@ -17,14 +17,14 @@ const MapScreen = () => {
 
       <View style={tw`h-1/2`}>
         <NativeStack.Navigator>
-          <Stack.Screen 
+          <NativeStack.Screen 
             name="NavigateCard"
             component={NavigateCard}
             options={{
               headerShown: false,
             }}
           />
-          <Stack.Screen 
+          <NativeStack.Screen 
             name="HaulOptionsCard"
             component={HaulOptionsCard}
             options={{
