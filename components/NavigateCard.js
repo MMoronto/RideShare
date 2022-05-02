@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import tw from "tailwind-react-native-classnames";
 
 const NavigateCard = () => {
   return (
