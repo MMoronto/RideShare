@@ -5,7 +5,7 @@ import tw from "tailwind-react-native-classnames";
 const NavigateCard = () => {
   return (
     <SafeAreaView style={tw`bg-white flex-1`}>
-      <Text>NavigateCard</Text>
+      <Text style={tw`text-center py-5 text-xl`}>NavigateCard</Text>
     </SafeAreaView>
   )
 }
