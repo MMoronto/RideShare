@@ -23,4 +23,11 @@ const NavigateCard = () => {
 
 export default NavigateCard;
 
-const styles = StyleSheet.create({});
+const toInputBoxStyles = StyleSheet.create({
+  container: {
+    backgroundColor: "white",
+    paddingTop: 20,
+    flex: 0,
+  },
+  
+});
