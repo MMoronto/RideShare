@@ -10,7 +10,11 @@ const NavigateCard = () => {
       <Text style={tw`text-center py-5 text-xl`}>NavigateCard</Text>
       <View style={tw`border-t border-gray-200 flex-shrink`}>
         <View>
-          <GooglePlacesAutocomplete />
+          <GooglePlacesAutocomplete 
+            placeholder='where to?'
+            nearbyPlacesAPI='GooglePlacesSearch'
+            debounce={400}
+          />
         </View>
       </View>
     </SafeAreaView>
