@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import tw from "tailwind-react-native-classnames";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
+import { GOOGLE_MAPS_APIKEY } from "@env";
 
 const NavigateCard = () => {
   return (
@@ -9,7 +10,7 @@ const NavigateCard = () => {
       <Text style={tw`text-center py-5 text-xl`}>NavigateCard</Text>
       <View style={tw`border-t border-gray-200 flex-shrink`}>
         <View>
-          
+          <GooglePlacesAutocomplete />
         </View>
       </View>
     </SafeAreaView>
