@@ -4,6 +4,7 @@ import tw from "tailwind-react-native-classnames";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import { GOOGLE_MAPS_APIKEY } from "@env";
 import { useDispatch } from "react-redux";
+import { setDestination } from "../slices/navSlice";
 
 const NavigateCard = () => {
   const dispatch = useDispatch();
@@ -20,7 +21,12 @@ const NavigateCard = () => {
             returnKeyType={'search'}
             minLength={2}
             onPress={(data, details = null) => {
-              dispatch
+              dispatch(
+                setDestination({
+                  location: details.geometry.location,
+                  description: data.description,
+                })
+              );
             }}
             enablePoweredByContainer={false}
             query={{
