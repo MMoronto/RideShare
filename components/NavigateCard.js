@@ -13,6 +13,12 @@ const NavigateCard = () => {
           <GooglePlacesAutocomplete 
             placeholder='where to?'
             styles={toInputBoxStyles}
+            fetchDetails={true}
+            enablePoweredByContainer={false}
+            query={{
+              key: GOOGLE_MAPS_APIKEY,
+              language: "en",
+            }}
             nearbyPlacesAPI='GooglePlacesSearch'
             debounce={400}
           />
