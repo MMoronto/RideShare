@@ -5,9 +5,11 @@ import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplet
 import { GOOGLE_MAPS_APIKEY } from "@env";
 import { useDispatch } from "react-redux";
 import { setDestination } from "../slices/navSlice";
+import { useNavigation } from '@react-navigation/native';
 
 const NavigateCard = () => {
   const dispatch = useDispatch();
+  const navigation = useNavigation();
 
   return (
     <SafeAreaView style={tw`bg-white flex-1`}>
@@ -27,6 +29,8 @@ const NavigateCard = () => {
                   description: data.description,
                 })
               );
+
+                navigation.navigate('HaulOptionsCard')
             }}
             enablePoweredByContainer={false}
             query={{
