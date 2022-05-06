@@ -4,6 +4,7 @@ import MapView, { Marker } from 'react-native-maps';
 import { useSelector } from 'react-redux';
 import tw from "tailwind-react-native-classnames";
 import { selectDestination, selectOrigin } from '../slices/navSlice';
+import MapViewDirections from "react-native-maps-directions";
 
 const Map = () => {
     const origin = useSelector(selectOrigin);
@@ -20,6 +21,17 @@ const Map = () => {
             longitudeDelta: 0.005,
         }}
     >
+
+        {origin && destination && (
+            <MapViewDirections 
+                origin={origin.description}
+                destination={destination.description}
+                apikey={GOOGLE_MAPS_APIKEY}
+                strokeWidth={3}
+                strokeColor="black"
+            />
+        )}
+
         {origin?.location && (
             <Marker 
                 coordinate={{
