@@ -24,10 +24,10 @@ const HomeScreen = () => {
 
         <GooglePlacesAutocomplete
           placeholder='Where From?'
-          onPress={(data, details = null) => {
-            // 'details' is provided when fetchDetails = true
-            console.log(data, details);
-          }}
+          // onPress={(data, details = null) => {
+          //   // 'details' is provided when fetchDetails = true
+          //   console.log(data, details);
+          // }}
           styles={{
             container: {
               flex: 5,
@@ -36,20 +36,20 @@ const HomeScreen = () => {
               fontSize: 18,
             },
           }}
-          onPress={(data, details = null) => {
-            dispatch(
-              setOrigin({
-                location: details.geometry.location,
-                description: data.description
-              })
-            );
+          // onPress={(data, details = null) => {
+          //   dispatch(
+          //     setOrigin({
+          //       location: details.geometry.location,
+          //       description: data.description
+          //     })
+          //   );
 
-            dispatch(setDestination(null));
-          }}
-          fetchDetails={true}
-          returnKeyType={"search"}
-          enablePoweredByContainer={false}
-          minLength={2}
+          //   dispatch(setDestination(null));
+          // }}
+          // fetchDetails={true}
+          // returnKeyType={"search"}
+          // enablePoweredByContainer={false}
+          // minLength={2}
           query={{
             key: GOOGLE_MAPS_APIKEY,
             language: 'en',
