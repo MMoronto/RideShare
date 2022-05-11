@@ -57,7 +57,7 @@ const HomeScreen = () => {
           requestUrl={{
             useOnPlatform: 'web', // or "all"
             url:
-              'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api',
+              'ttps://maps.googleapis.com/maps/api',
 
           }}
           // nearbyPlacesAPI='GooglePlacesSearch'
