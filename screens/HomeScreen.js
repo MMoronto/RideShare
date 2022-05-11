@@ -54,7 +54,13 @@ const HomeScreen = () => {
             key: GOOGLE_MAPS_APIKEY,
             language: 'en',
           }}
-          nearbyPlacesAPI='GooglePlacesSearch'
+          requestUrl={{
+            useOnPlatform: 'web', // or "all"
+            url:
+              'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api',
+
+          }}
+          // nearbyPlacesAPI='GooglePlacesSearch'
           debounce={400}
         />
           
