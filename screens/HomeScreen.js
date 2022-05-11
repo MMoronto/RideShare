@@ -57,7 +57,7 @@ const HomeScreen = () => {
           requestUrl={{
             useOnPlatform: 'web', // or "all"
             url:
-              'ttps://maps.googleapis.com/maps/api',
+              'https://maps.googleapis.com/maps/api/place/autocomplete/json',
 
           }}
           // nearbyPlacesAPI='GooglePlacesSearch'
