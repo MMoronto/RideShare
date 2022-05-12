@@ -55,12 +55,12 @@ const HomeScreen = () => {
             key: GOOGLE_MAPS_APIKEY,
             language: 'en',
           }}
-          requestUrl={{
-            useOnPlatform: 'web', // or "all"
-            url:
-              'https://maps.googleapis.com/maps/api/place/autocomplete/output?parameters',
-          }}
-          // nearbyPlacesAPI='GooglePlacesSearch'
+          // requestUrl={{
+          //   useOnPlatform: 'web', // or "all"
+          //   url:
+          //     'https://maps.googleapis.com/maps/api/place/autocomplete/output?parameters',
+          // }}
+          nearbyPlacesAPI='GooglePlacesSearch'
           debounce={400}
         />
           
