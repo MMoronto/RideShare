@@ -60,7 +60,7 @@ const HomeScreen = () => {
               'https://maps.googleapis.com/maps/api/place/autocomplete/json
               ?input=Paris
               &types=geocode
-              &key=YOUR_API_KEY',
+              &key=GOOGLE_MAPS_API_KEY',
 
           }}
           // nearbyPlacesAPI='GooglePlacesSearch'
