@@ -23,11 +23,12 @@ const HomeScreen = () => {
         />
 
         <GooglePlacesAutocomplete
+          dispatch={dispatch}
           placeholder='Where From?'
-          // onPress={(data, details = null) => {
-          //   // 'details' is provided when fetchDetails = true
-          //   console.log(data, details);
-          // }}
+          onPress={(data, details = null) => {
+            // 'details' is provided when fetchDetails = true
+            console.log(data, details);
+          }}
           styles={{
             container: {
               flex: 5,
