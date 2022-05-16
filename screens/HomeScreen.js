@@ -62,6 +62,8 @@ const HomeScreen = () => {
           // }}
           nearbyPlacesAPI='GooglePlacesSearch'
           debounce={400}
+          currentLocation={true}
+          currentLocationLabel='Current location'
         />
           
 
