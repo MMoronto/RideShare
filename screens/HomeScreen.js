@@ -37,9 +37,10 @@ const HomeScreen = () => {
               fontSize: 18,
             },
           }}
-          onPress={() => {
-            
+          onPress={(data, details = null) => {
+
           }}
+          fetchDetails={true}
           enablePoweredByContainer={false}
           minLength={2}
           query={{
