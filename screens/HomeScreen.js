@@ -37,29 +37,15 @@ const HomeScreen = () => {
               fontSize: 18,
             },
           }}
-          // onPress={(data, details = null) => {
-          //   dispatch(
-          //     setOrigin({
-          //       location: details.geometry.location,
-          //       description: data.description
-          //     })
-          //   );
-
-          //   dispatch(setDestination(null));
-          // }}
-          // fetchDetails={true}
-          // returnKeyType={"search"}
-          // enablePoweredByContainer={false}
-          // minLength={2}
+          onPress={() => {
+            
+          }}
+          enablePoweredByContainer={false}
+          minLength={2}
           query={{
             key: GOOGLE_MAPS_APIKEY,
             language: 'en',
           }}
-          // requestUrl={{
-          //   useOnPlatform: 'web', // or "all"
-          //   url:
-          //     'https://maps.googleapis.com/maps/api/place/autocomplete/output?parameters',
-          // }}
           nearbyPlacesAPI='GooglePlacesSearch'
           debounce={400}
           currentLocation={true}
