@@ -17,7 +17,7 @@ const Map = () => {
         if (!origin || !destination) return;
 
         // Zoom & fit to markers
-        mapRef.current        
+        mapRef.current.fitToSuppliedMarkers(['origin', 'destination'])        
     }, [origin, destination])
 
     return (
