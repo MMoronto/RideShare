@@ -13,6 +13,13 @@ const Map = () => {
     const destination = useSelector(selectDestination);
     const mapRef = useRef(null);
 
+    useEffect(() => {
+        if (!origin || !destination) return;
+
+        // Zoom & fit to markers
+        mapRef.current        
+    }, [origin, destination])
+
     return (
     <MapView
         ref={mapRef}
