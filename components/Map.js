@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import { useSelector } from 'react-redux';
@@ -53,7 +53,19 @@ const Map = () => {
                 description={origin.description}
                 identifier="origin"
             />
-        )}    
+        )}
+
+        {destination?.location && (
+            <Marker 
+                coordinate={{
+                    latitude: destination.location.lat,
+                    longitude: destination.location.lng,
+                }}
+                title="Destination"
+                description={destination.description}
+                identifier="destination"
+            />
+        )}     
     </MapView>
   );
 };
