@@ -5,10 +5,13 @@ import { useSelector } from 'react-redux';
 import tw from "tailwind-react-native-classnames";
 import { selectDestination, selectOrigin } from '../slices/navSlice';
 import MapViewDirections from "react-native-maps-directions";
+import { GOOGLE_MAPS_APIKEY } from "@env";
+import { useRef } from "react";
 
 const Map = () => {
     const origin = useSelector(selectOrigin);
     const destination = useSelector(selectDestination);
+    const mapRef = useRef(null);
 
     return (
     <MapView
@@ -49,4 +52,4 @@ const Map = () => {
 
 export default Map;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
