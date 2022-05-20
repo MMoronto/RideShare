@@ -18,11 +18,17 @@ const data = [
 
 const NavFavorites = () => {
   return (
-    <View>
-      <Text>NavFavorites</Text>
-    </View>
-  )
-}
+    <FlatList 
+        data={data} 
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+            <TouchableOpacity>
+                <Text>Ola!!</Text>
+            </TouchableOpacity>
+        )}
+    />
+  );
+};
 
 export default NavFavorites
 
