@@ -29,7 +29,13 @@ const NavFavorites = () => {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
             <TouchableOpacity>
-                <Text>Ola!!</Text>
+                <Icon
+                    style={tw`mr-4 rounded-full bg-gray-300 p-3`}
+                    name={icon}
+                    type="ionicon"
+                    color="white"
+                    size={18} 
+                />
             </TouchableOpacity>
         )}
     />
