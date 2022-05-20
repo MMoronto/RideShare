@@ -16,7 +16,7 @@ const NavFavorites = () => {
             location: "Home",
             destination: "Opebi Rd, Lagos, Nigeria",
         },
-    ]:
+    ];
   return (
     <View>
       <Text>NavFavorites</Text>
