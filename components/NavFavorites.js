@@ -6,6 +6,8 @@ import {
     TouchableOpacity,
     View, 
 } from 'react-native'
+import tw from 'tailwind-react-native-classnames';
+import { Icon } from 'react-native-elements';
 
 const data = [
     {
