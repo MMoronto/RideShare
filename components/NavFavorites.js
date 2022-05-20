@@ -27,7 +27,7 @@ const NavFavorites = () => {
     <FlatList 
         data={data} 
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
+        renderItem={({ item: { location, destination, icon } }) => (
             <TouchableOpacity>
                 <Icon
                     style={tw`mr-4 rounded-full bg-gray-300 p-3`}
