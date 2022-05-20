@@ -19,7 +19,7 @@ const data = [
     {
         id: "456",
         icon: "portmanteau",
-        location: "Home",
+        location: "Warehouse",
         destination: "Opebi Rd, Lagos, Nigeria",
     },
 ];
@@ -38,6 +38,10 @@ const NavFavorites = () => {
                     color="white"
                     size={18} 
                 />
+                <View>
+                    <Text>{location}</Text>
+                    <Text>{destination}</Text>
+                </View>
             </TouchableOpacity>
         )}
     />
