@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { setDestination } from "../slices/navSlice";
 import { useNavigation } from '@react-navigation/native';
 import NavFavorites from './NavFavorites';
+import { Icon } from 'react-native-elements';
 
 const NavigateCard = () => {
   const dispatch = useDispatch();
@@ -44,6 +45,13 @@ const NavigateCard = () => {
         </View>
 
         <NavFavorites />
+      </View>
+      
+      <View>
+        <TouchableOpacity style={tw`flex flex-row bg-black w-24 px-4 py-3 rounded-full`}>
+        <Icon name="truck" type="font-awesome" color="white" size={16} />
+            <Text style={tw`text-white text-center`}>Haulers</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
