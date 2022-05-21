@@ -1,7 +1,7 @@
 // import { StatusBar } from 'expo-status-bar';
 import Geolocation from '@react-native-community/geolocation';
 import * as React from 'react';
-import { StyleSheet, KeyboardAvoidingView } from 'react-native';
+import { KeyboardAvoidingView } from 'react-native';
 import {Provider} from "react-redux";
 import HomeScreen from './screens/HomeScreen';
 import MapScreen from './screens/MapScreen';
