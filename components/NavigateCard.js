@@ -47,8 +47,15 @@ const NavigateCard = () => {
         <NavFavorites />
       </View>
       
-      <View style={tw`flex-row bg-white justify-evenly py-2 mt-auto border-t border-gray-100`}>
-        <TouchableOpacity style={tw`flex flex-row justify-between bg-black w-24 px-4 py-3 rounded-full`}>
+      <View 
+        style={tw`flex-row bg-white justify-evenly py-2 mt-auto 
+        border-t border-gray-100`}
+      >
+        <TouchableOpacity 
+          onPress={() => navigation.navigate('HaulOptionsCard')}
+          style={tw`flex flex-row justify-between bg-black w-24 px-4 
+          py-3 rounded-full`}
+        >
         <Icon name="truck" type="font-awesome" color="white" size={16} />
             <Text style={tw`text-white text-center`}>Haulers</Text>
         </TouchableOpacity>
