@@ -7,8 +7,8 @@ const HaulOptionsCard = () => {
   return (
     <SafeAreaView Style={tw`bg-white flex-grow`}>
       <View>
-        <TouchableOpacity>
-
+        <TouchableOpacity style={tw`absolute top-3 left-5 p-3 rounded-full`}>
+          <Icon name="chevron-left" type="fontawesome" /> 
         </TouchableOpacity>
         <Text Style={tw`text-center py-5 text-xl`}>Hire a hauler</Text>
       </View>
