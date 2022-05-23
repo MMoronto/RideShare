@@ -4,7 +4,7 @@ import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 const HaulOptionsCard = () => {
   return (
     <SafeAreaView>
-      <Text>Hire a hauler</Text>
+      <Text Style={tw`text-center py-5 text-xl`}>Hire a hauler</Text>
     </SafeAreaView>
   )
 }
