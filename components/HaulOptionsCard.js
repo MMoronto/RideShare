@@ -5,7 +5,9 @@ import tw from 'tailwind-react-native-classnames';
 const HaulOptionsCard = () => {
   return (
     <SafeAreaView Style={tw`bg-white flex-grow`}>
-      <Text Style={tw`text-center py-5 text-xl`}>Hire a hauler</Text>
+      <View>
+        <Text Style={tw`text-center py-5 text-xl`}>Hire a hauler</Text>
+      </View>
     </SafeAreaView>
   )
 }
