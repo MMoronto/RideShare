@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
 const HaulOptionsCard = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>Hire a hauler</Text>
-    </View>
+    </SafeAreaView>
   )
 }
 
