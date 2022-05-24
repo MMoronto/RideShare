@@ -49,10 +49,11 @@ const HaulOptionsCard = () => {
               }} 
               source={{ uri: image }}
             />
-            <View>
-              <Text>{title}</Text>
+            <View style={tw`-ml-6`}>
+              <Text style={tw`text-xl font-semibold`}>{title}</Text>
               <Text>Travel time ...</Text>
             </View>
+            <Text style={tw`text-xl`}>$450</Text>
           </TouchableOpacity>
         )}
       />
