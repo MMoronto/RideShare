@@ -7,19 +7,19 @@ import { useNavigation } from '@react-navigation/native';
 const data = [
   {
     id: "Dumptruck-X-123",
-    title: "XtypeHauler",
+    title: "X type Hauler",
     multiplier: 1,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBzj_U2xUXkBirJ8Q9TCWWmJA_oBWn7wbuQ&usqp=CAU"
   },
   {
     id: "Box-XL-456",
-    title: "XLtypeHauler",
+    title: "XL type Hauler",
     multiplier: 1.25,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBzj_U2xUXkBirJ8Q9TCWWmJA_oBWn7wbuQ&usqp=CAU"
   },
   {
     id: "Flatbed-XXL-789",
-    title: "XXLtypeHauler",
+    title: "XXL type Hauler",
     multiplier: 1.75,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBzj_U2xUXkBirJ8Q9TCWWmJA_oBWn7wbuQ&usqp=CAU"
   },
@@ -38,8 +38,12 @@ const HaulOptionsCard = () => {
         </TouchableOpacity>
         <Text Style={tw`text-center py-5 text-xl`}>Hire a hauler</Text>
       </View>
-      <FlatList 
-
+      <FlatList data={data} keyExtractor={(item) => item.id}
+        renderItem={({item}) => (
+          <TouchableOpacity>
+            <Text>Dump Truck</Text>
+          </TouchableOpacity>
+        )}
       />
     </SafeAreaView>
   )
