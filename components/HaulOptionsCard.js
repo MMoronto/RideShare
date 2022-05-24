@@ -4,6 +4,27 @@ import tw from 'tailwind-react-native-classnames';
 import { Icon } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 
+const data = [
+  {
+    id: "Flatbed-X-123",
+    title: "XtypeHauler",
+    multiplier: 1,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBzj_U2xUXkBirJ8Q9TCWWmJA_oBWn7wbuQ&usqp=CAU"
+  },
+  {
+    id: "Flatbed-X-123",
+    title: "XtypeHauler",
+    multiplier: 1,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBzj_U2xUXkBirJ8Q9TCWWmJA_oBWn7wbuQ&usqp=CAU"
+  },
+  {
+    id: "Flatbed-X-123",
+    title: "XtypeHauler",
+    multiplier: 1,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBzj_U2xUXkBirJ8Q9TCWWmJA_oBWn7wbuQ&usqp=CAU"
+  },
+];
+
 const HaulOptionsCard = () => {
   const navigation = useNavigation();
   return (
@@ -17,6 +38,9 @@ const HaulOptionsCard = () => {
         </TouchableOpacity>
         <Text Style={tw`text-center py-5 text-xl`}>Hire a hauler</Text>
       </View>
+      <FlatList 
+
+      />
     </SafeAreaView>
   )
 }
