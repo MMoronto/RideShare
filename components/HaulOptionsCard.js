@@ -6,21 +6,21 @@ import { useNavigation } from '@react-navigation/native';
 
 const data = [
   {
-    id: "Flatbed-X-123",
+    id: "Dumptruck-X-123",
     title: "XtypeHauler",
     multiplier: 1,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBzj_U2xUXkBirJ8Q9TCWWmJA_oBWn7wbuQ&usqp=CAU"
   },
   {
-    id: "Flatbed-X-123",
-    title: "XtypeHauler",
-    multiplier: 1,
+    id: "Box-XL-456",
+    title: "XLtypeHauler",
+    multiplier: 1.25,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBzj_U2xUXkBirJ8Q9TCWWmJA_oBWn7wbuQ&usqp=CAU"
   },
   {
-    id: "Flatbed-X-123",
-    title: "XtypeHauler",
-    multiplier: 1,
+    id: "Flatbed-XXL-789",
+    title: "XXLtypeHauler",
+    multiplier: 1.75,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBzj_U2xUXkBirJ8Q9TCWWmJA_oBWn7wbuQ&usqp=CAU"
   },
 ];
