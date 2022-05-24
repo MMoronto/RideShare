@@ -39,15 +39,22 @@ const HaulOptionsCard = () => {
         <Text Style={tw`text-center py-5 text-xl`}>Hire a hauler</Text>
       </View>
       <FlatList data={data} keyExtractor={(item) => item.id}
-        renderItem={({item}) => (
+        renderItem={({item: { id, title, multiplier, image } }) => (
           <TouchableOpacity>
-            <Text>Dump Truck</Text>
+            <Image
+              style={{
+                width: 100,
+                height: 100,
+                resizeMode: "contain",
+              }} 
+              source={{ uri: image }}
+            />
           </TouchableOpacity>
         )}
       />
     </SafeAreaView>
-  )
-}
+  );
+};
 
 export default HaulOptionsCard
 
