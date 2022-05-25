@@ -28,7 +28,7 @@ const data = [
 const HaulOptionsCard = () => {
   const navigation = useNavigation();
   const [selected, setSelected] = useState(null);
-  
+
   return (
     <SafeAreaView Style={tw`bg-white flex-grow`}>
       <View>
@@ -47,7 +47,9 @@ const HaulOptionsCard = () => {
         renderItem={({item: { id, title, multiplier, image } }) => (
           <TouchableOpacity 
           onPress={() => setSelected(item)}
-            style={tw`flex-row justify-between items-center px-10`}
+            style={tw`flex-row justify-between items-center px-10 ${
+              id === selected?.id && "bg-0gray-200"
+            }`}
           >
             <Image
               style={{
