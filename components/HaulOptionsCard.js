@@ -27,6 +27,7 @@ const data = [
 
 const HaulOptionsCard = () => {
   const navigation = useNavigation();
+  const [selected, setSelected] = useState(null);
   return (
     <SafeAreaView Style={tw`bg-white flex-grow`}>
       <View>
