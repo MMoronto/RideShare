@@ -28,20 +28,27 @@ const data = [
 const HaulOptionsCard = () => {
   const navigation = useNavigation();
   const [selected, setSelected] = useState(null);
+  
   return (
     <SafeAreaView Style={tw`bg-white flex-grow`}>
       <View>
         <TouchableOpacity 
           onPress={() => navigation.navigate("NavigateCard")} 
-          style={tw`absolute top-3 left-5 p-3 rounded-full`}
+          style={tw`absolute top-3 left-5 z-50 p-3 rounded-full`}
         >
           <Icon name="chevron-left" type="fontawesome" /> 
         </TouchableOpacity>
         <Text Style={tw`text-center py-5 text-xl`}>Hire a hauler</Text>
       </View>
-      <FlatList data={data} keyExtractor={(item) => item.id}
+
+      <FlatList 
+        data={data} 
+        keyExtractor={(item) => item.id}
         renderItem={({item: { id, title, multiplier, image } }) => (
-          <TouchableOpacity style={tw`flex-row justify-between items-center px-10`}>
+          <TouchableOpacity 
+          onPress={() => setSelected(item)}
+            style={tw`flex-row justify-between items-center px-10`}
+          >
             <Image
               style={{
                 width: 100,
