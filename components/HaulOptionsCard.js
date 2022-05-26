@@ -44,7 +44,7 @@ const HaulOptionsCard = () => {
       <FlatList 
         data={data} 
         keyExtractor={(item) => item.id}
-        renderItem={({item: { id, title, multiplier, image } }) => (
+        renderItem={({item: { id, title, multiplier, image }, item }) => (
           <TouchableOpacity 
           onPress={() => setSelected(item)}
             style={tw`flex-row justify-between items-center px-10 ${
