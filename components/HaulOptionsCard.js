@@ -1,8 +1,15 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { 
+  FlatList, 
+  SafeAreaView, 
+  StyleSheet, Text, 
+  TouchableOpacity, 
+  View, 
+} from 'react-native';
 import tw from 'tailwind-react-native-classnames';
 import { Icon } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
+import { image } from "react-native";
 
 const data = [
   {
