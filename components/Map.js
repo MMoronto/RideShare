@@ -31,7 +31,7 @@ const Map = () => {
             )
                 .then((res) => res.json())
                 .then((data) => {
-                    dispatch(setTravelTimeInformation)
+                    dispatch(setTravelTimeInformation(data.rows[0].elements[0]));
                 });
         };
 
