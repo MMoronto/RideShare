@@ -67,10 +67,17 @@ const HaulOptionsCard = () => {
           </TouchableOpacity>
         )}
       />
+      <View>
+        <TouchableOpacity>
+              <Text style={tw`text-center text-white text-xl`} >
+                Choose {selected?.title}
+              </Text>
+        </TouchableOpacity>
+      </View>
     </SafeAreaView>
   );
 };
 
 export default HaulOptionsCard
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
