@@ -47,7 +47,8 @@ const HaulOptionsCard = () => {
         >
           <Icon name="chevron-left" type="fontawesome" /> 
         </TouchableOpacity>
-        <Text Style={tw`text-center py-5 text-xl`}>Hire a hauler</Text>
+        <Text Style={tw`text-center py-5 text-xl`}>Hire a hauler - 
+        {travelTimeInformation?.distance.text}</Text>
       </View>
 
       <FlatList 
