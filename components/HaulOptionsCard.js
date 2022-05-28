@@ -10,6 +10,7 @@ import tw from 'tailwind-react-native-classnames';
 import { Icon } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 import { image } from "react-native";
+import { useSelector } from 'react-redux';
 
 const data = [
   {
@@ -35,6 +36,7 @@ const data = [
 const HaulOptionsCard = () => {
   const navigation = useNavigation();
   const [selected, setSelected] = useState(null);
+  const travelTimeInformation = useSelector(selectTravelTimeInformation);
 
   return (
     <SafeAreaView Style={tw`bg-white flex-grow`}>
