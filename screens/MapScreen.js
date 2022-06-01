@@ -14,7 +14,7 @@ const MapScreen = () => {
   return (
     <View>
 
-      <TouchableOpacity style={tw`absolute top-16 left-8`}>
+      <TouchableOpacity style={tw`bg-gray-100 absolute top-16 left-8 z-50`}>
         <Icon name="menu" />
       </TouchableOpacity>
 
