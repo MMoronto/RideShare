@@ -33,6 +33,9 @@ const data = [
   },
 ];
 
+// Tonnage Surcharge Rate multiplier
+const TONNAGE_SURCHARGE_RATE = 1.5;
+
 const HaulOptionsCard = () => {
   const navigation = useNavigation();
   const [selected, setSelected] = useState(null);
@@ -73,7 +76,18 @@ const HaulOptionsCard = () => {
               <Text style={tw`text-xl font-semibold`}>{title}</Text>
               <Text>{travelTimeInformation?.duration.text} Travel Time</Text>
             </View>
-            <Text style={tw`text-xl`}>$450</Text>
+            <Text style={tw`text-xl`}>
+
+              {new Intl.NumberFormat('en-us', {
+                style: 'currency',
+                currency: 'USD'
+              }).format(
+
+                (travelTimeInformation?.duration.value * TONNAGE_SURCHARGE_RATE * multiplier)
+
+              )}
+
+            </Text>
           </TouchableOpacity>
         )}
       />
