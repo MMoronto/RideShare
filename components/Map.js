@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
+import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import tw from "tailwind-react-native-classnames";
 import { selectDestination, selectOrigin, setTravelTimeInformation } from '../slices/navSlice';
