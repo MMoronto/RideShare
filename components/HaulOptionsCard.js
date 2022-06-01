@@ -97,7 +97,7 @@ const HaulOptionsCard = () => {
           style={tw`bg-black py-3 m-3 ${!selected && "bg-gray-300"}`}
         >
           <Text style={tw`text-center text-white text-xl`} >
-            Choose {selected?.title}
+            Choose {selected?.title} / 100
           </Text>
         </TouchableOpacity>
       </View>
