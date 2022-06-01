@@ -9,8 +9,9 @@ import {
 import tw from 'tailwind-react-native-classnames';
 import { Icon } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
-import { image } from "react-native";
+import { Image } from "react-native";
 import { useSelector } from 'react-redux';
+import { selectTravelTimeInformation } from "../slices/navSlice";
 
 const data = [
   {

@@ -11,7 +11,7 @@ import { useNavigation } from '@react-navigation/native';
 
 const MapScreen = () => {
   const NativeStack = createNativeStackNavigator();
-  cons navigation = useNavigation();
+  const navigation = useNavigation();
   return (
     <View>
 
